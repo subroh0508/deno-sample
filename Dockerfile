@@ -12,7 +12,7 @@ COPY . .
 RUN deno install --entrypoint server.ts
 
 # Prismaクライアントを生成
-RUN deno run -A --allow-scripts=npm:@prisma/client,npm:prisma,npm:@prisma/engines npm:prisma generate
+RUN deno run -A npm:prisma generate
 
 # 非rootユーザーで実行
 USER deno
