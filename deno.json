@@ -13,5 +13,6 @@
     "dotenv": "npm:dotenv",
     "pg": "npm:pg",
     "prisma": "npm:prisma"
-  }
+  },
+  "nodeModulesDir": "auto"
 }
