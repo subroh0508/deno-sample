@@ -9,7 +9,7 @@ COPY deno.json deno.lock ./
 COPY . .
 
 # 依存関係をキャッシュ
-RUN deno install --entrypoint main.ts
+RUN deno install --entrypoint server.ts
 
 # 非rootユーザーで実行
 USER deno
