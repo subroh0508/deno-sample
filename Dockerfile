@@ -11,6 +11,9 @@ COPY . .
 # 依存関係をキャッシュ
 RUN deno install --entrypoint server.ts
 
+# Prismaクライアントを生成
+RUN deno run -A npm:prisma generate
+
 # 非rootユーザーで実行
 USER deno
 
