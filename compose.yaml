@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    develop:
+      watch:
+        - action: rebuild
+          path: .
