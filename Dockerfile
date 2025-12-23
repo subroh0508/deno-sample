@@ -11,4 +11,9 @@ COPY . .
 # 依存関係をキャッシュ
 RUN deno install --entrypoint main.ts
 
-CMD ["deno", "run", "main.ts"]
+# 非rootユーザーで実行
+USER deno
+
+EXPOSE 8000
+
+CMD ["deno", "task", "dev"]
