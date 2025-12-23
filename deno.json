@@ -13,5 +13,10 @@
     "pg": "npm:pg",
     "prisma": "npm:prisma"
   },
-  "nodeModulesDir": "auto"
+  "nodeModulesDir": "auto",
+  "allowScripts": [
+    "npm:@prisma/client",
+    "npm:@prisma/engines",
+    "npm:prisma"
+  ]
 }
